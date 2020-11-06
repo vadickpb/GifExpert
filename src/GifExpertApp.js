@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
-const GifExpertApp = () => {
+const GifExpertApp = ( {defaultCategories = []}) => {
 
     //const categories = ['goku', 'naruto', 'saint seia'];
-    const [categories, setCategories] = useState(['one punch']);
+    const [categories, setCategories] = useState(defaultCategories);
 
     // const handleAdd = () => {
     //     //setCategories([...categories, 'HunterX']);
